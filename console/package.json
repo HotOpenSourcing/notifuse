@@ -5,8 +5,8 @@
   "license": "SEE LICENSE IN ../LICENSE",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "lingui compile && tsc -b && vite build",
+    "dev": "node init && vite",
+    "build": "node init && lingui compile && tsc -b && vite build",
     "lint": "eslint . --max-warnings 0",
     "lingui:extract": "lingui extract",
     "lingui:compile": "lingui compile",

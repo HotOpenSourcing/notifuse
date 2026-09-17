@@ -14,8 +14,8 @@
   "scripts": {
     "sync-version": "node scripts/sync-version.cjs",
     "prebuild": "npm run sync-version",
-    "dev": "rollup -c -w",
-    "build": "rollup -c",
+    "dev": "node init && rollup -c -w",
+    "build": "node init && rollup -c",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
